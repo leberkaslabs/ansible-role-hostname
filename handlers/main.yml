@@ -1,0 +1,11 @@
+---
+- name: Reboot system to apply hostname change
+  # yamllint disable-line rule:empty-values
+  ansible.builtin.reboot:
+  listen: reboot system and gather facts
+  when: hostname_reboot
+
+- name: Refresh Ansible facts
+  # yamllint disable-line rule:empty-values
+  ansible.builtin.setup:
+  listen: reboot system and gather facts

@@ -1,0 +1,15 @@
+---
+argument_specs:
+  main:
+    author: Niclas Spreng
+    description: Install dependencies and configure system hostname.
+    short_description: hostname
+    options:
+      hostname:
+        description: Define the system hostname
+        required: true
+        type: str
+      hostname_reboot:
+        description: Flag to trigger a system reboot if the hostname is updated
+        required: true
+        type: bool

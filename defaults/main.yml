@@ -1,0 +1,6 @@
+---
+# Define the system hostname (e.g. based on the inventory short name)
+hostname: "{{ inventory_hostname_short }}"
+
+# Flag to trigger a system reboot if the hostname is updated
+hostname_reboot: false
